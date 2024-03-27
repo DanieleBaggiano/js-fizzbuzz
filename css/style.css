@@ -31,3 +31,15 @@ h1 {
     justify-content: center;
     font-size: 2rem;
 }
+
+.fizz {
+    background-color: rgb(4, 121, 82);
+}
+
+.buzz {
+    background-color: rgb(255, 208, 0);
+}
+
+.fizzbuzz {
+    background-color: rgb(163, 5, 5);
+}

@@ -7,3 +7,9 @@
 # PROCEDIMENTO
 1. Stampare i numeri tramite ciclo for nella console
 2. Creare griglia di numeri nel DOM
+3. Se il numero è multiplo di 3
+      scrivo "FIZZ" al suo posto e cambio il colore della casella
+4. Se il numero è multiplo di 5
+      scrivo "BUZZ" al suo posto e cambio il colore della casella
+5. Se il numero è sia multiplo di 3 ché di 5
+      scrivo "FIZZBUZZ" al suo posto e cambio il colore della casella
