@@ -1,3 +1,6 @@
+const rowElem = document.querySelector(".row");
+console.log(rowElem);
+
 for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FIZZBUZZ");
@@ -8,5 +11,8 @@ for (let i = 1; i <= 100; i++) {
     } else {
         console.log(i);
     }
+
+    const boxElem = `<div class="box">${i}</div>`;
+    rowElem.innerHTML += boxElem;
 }
 
