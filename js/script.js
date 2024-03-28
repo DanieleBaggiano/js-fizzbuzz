@@ -1,19 +1,20 @@
 const rowElem = document.querySelector(".row");
 console.log(rowElem);
 
+let boxElem = "";
 for (let i = 1; i <= 100; i++) {
     let bgClass;
     let num = i;
 
-    if (num % 3 === 0 && num % 5 === 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
         console.log("FIZZBUZZ");
         bgClass = "fizzbuzz";
         num = "FIZZBUZZ";
-    } else if (num % 3 === 0) {
+    } else if (i % 3 === 0) {
         console.log("FIZZ");
         bgClass = "fizz"
         num = "FIZZ";
-    } else if (num % 5 === 0) {
+    } else if (i % 5 === 0) {
         console.log("BUZZ");
         bgClass = "buzz"
         num = "BUZZ";

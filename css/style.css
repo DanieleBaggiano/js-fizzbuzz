@@ -19,7 +19,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .box {
