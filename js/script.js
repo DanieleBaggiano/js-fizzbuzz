@@ -3,33 +3,25 @@ console.log(rowElem);
 
 for (let i = 1; i <= 100; i++) {
     let bgClass;
+    let num = i;
 
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (num % 3 === 0 && num % 5 === 0) {
         console.log("FIZZBUZZ");
         bgClass = "fizzbuzz";
-        
-    } else if (i % 3 === 0) {
+        num = "FIZZBUZZ";
+    } else if (num % 3 === 0) {
         console.log("FIZZ");
         bgClass = "fizz"
-        
-    } else if (i % 5 === 0) {
+        num = "FIZZ";
+    } else if (num % 5 === 0) {
         console.log("BUZZ");
         bgClass = "buzz"
-        
+        num = "BUZZ";
     } else {
         console.log(i);
     }
 
-    const writeElemFizzBuzz = `<div class="writefizzbuzz"></div>`;
-    rowElem.innerHTML += writeElemFizzBuzz;
-
-    const writeElemFizz = `<div class="writefizz"></div>`;
-    rowElem.innerHTML += writeElemFizz;
-
-    const writeElemBuzz = `<div class="writebuzz"></div>`;
-    rowElem.innerHTML += writeElemBuzz;
-
-    const boxElem = `<div class="box ${bgClass}">${i}</div>`;
+    const boxElem = `<div class="box ${bgClass}">${num}</div>`;
     rowElem.innerHTML += boxElem;
 }
 
